@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Beni';
+    src: local('Beni Bold'), local('Beni-Bold'),
+        url('./BeniBold/BeniBold.woff2') format('woff2'),
+        url('./BeniBold/BeniBold.woff') format('woff'),
+        url('./BeniBold/BeniBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tungsten';
+    src: local('Tungsten'), local('Tungsten'),
+        url('./TungstenBold/Tungsten.eot') format('eot'),
+        url('./TungstenBold/Tungsten.woff2') format('woff2'),
+        url('./TungstenBold/Tungsten.woff') format('woff'),
+        url('./TungstenBold/Tungsten.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
