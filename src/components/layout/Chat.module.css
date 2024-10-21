@@ -1,0 +1,37 @@
+.chat {
+  position: fixed;
+  bottom: 0.1875rem;
+  left: 0.1875rem;
+  right: 0.1875rem;
+  display: grid;
+  grid-template-columns: auto min-content;
+  align-items: center;
+  padding-left: 0.75rem;
+  background-color: rgba(0,0,0,.5);
+  max-width: 27.8125rem;
+  width: calc(100vw - 3.75rem);
+  height: 2rem;
+  font-size: 0.9375rem;
+}
+
+.chat label[for=chat] {
+  cursor: text;
+  display: grid;
+  grid-template-columns: min-content auto;
+}
+
+.chat label[for=chat] span {
+  color: #9BC6DA;
+  margin-right: 0.125rem;
+}
+
+.chat input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  
+}
+
+.chat label[for=fixChat] {
+  width: min-content;
+}
