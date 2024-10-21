@@ -1,0 +1,19 @@
+.quantityCard {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: #2E3337;
+  color: white;
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0 1.5rem;
+  font-size: 0.75rem;
+}
+
+.quantityCard small {
+  padding-right: 1.875rem;
+}
+
+.quantityCard span {
+  text-transform: uppercase;
+}

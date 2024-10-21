@@ -1,0 +1,36 @@
+.socialBar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  top: 3.1875rem;
+  bottom: 0rem;
+  right: calc(3.4375rem - 16.0625rem);
+  background-color: #171E24;
+  border-top: 0.0625rem solid #A5A1AD;
+  width: 16.0625rem;
+  transition: right .1s linear;
+  z-index: 99;
+  cursor: pointer;
+  overflow-y: scroll ;
+  overflow-x: hidden;
+}
+
+.socialBar::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.socialBar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.socialBar::-webkit-scrollbar-thumb {
+  background-color: #888888;
+  border-radius: -0.0625rem;
+  border: 0.1875rem none #ff0000;
+}
+
+.socialBar:hover {
+  background-color: rgba(23, 30, 36, .7);
+  right: 0;
+  /* filter: brightness(1.3); */
+}
