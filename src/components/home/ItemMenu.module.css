@@ -1,0 +1,38 @@
+.itemMenu {
+  font-size: 6vh;
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  width: max-content;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.itemMenu:hover, .itemMenu:hover .highlight {
+  color: #42FED0 !important;
+
+}
+
+.itemMenu:hover .a {
+  transform: rotate(135deg);
+  background-color: #42FED0;
+}
+
+.itemMenu:hover h2 {
+  padding-left: 0.75rem;
+  transition: padding .1s linear;
+}
+
+.a {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  transform: rotate(45deg);
+  margin: 0.25rem;
+  transition: transform .1s linear;
+}
+
+.highlight {
+  font-size: 12vh;
+  color: #FE4554;
+}
