@@ -12,6 +12,9 @@ import BackgroundVideo from '@/components/layout/BackgroundVideo';
 export const metadata = {
   title: "Valorant",
   description: "Clone da interface do jogo Valorant.",
+  icons: {
+    icon: '/images/favicon.ico'
+  }
 };
 
 export default function RootLayout({ children }) {
