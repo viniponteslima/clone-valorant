@@ -33,9 +33,8 @@ export default function Economy() {
 
       <div className={styles.nightMarket}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
-          <rect x="118" y="56" width="163" height="288" fill="#DEDBD5"/>
-          <rect x="142" y="199.983" width="82" height="82" transform="rotate(-45 142 199.983)" fill="black"/>
-        </svg>
+            <path xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd" d="M281 56H118V344H281V56ZM200 128L128 200L200 272L272 200L200 128Z" fill="#DEDBD5"/>
+          </svg>
       </div>
 
 
