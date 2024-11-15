@@ -2,7 +2,7 @@
   padding: 0 40px;
   height: 100%;
   display: grid;
-  grid-template-rows: 35vh 20vh 5vh 7.5vh;
+  grid-template-rows: 40vh 25vh 6vh 8vh;
   gap: 5px;
 }
 
