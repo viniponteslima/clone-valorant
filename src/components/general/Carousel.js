@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import styles from './Carousel.module.css';
 
-export default function Carousel({ children, goTo, timer}) {
+export default function Carousel({ children }) {
 
   const [currentIndex, setCurrentIndex] = useState(0)
 
