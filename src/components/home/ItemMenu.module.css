@@ -13,9 +13,11 @@
 
 }
 
-.itemMenu:hover .a {
+.itemMenu:hover .marker {
   transform: rotate(135deg);
   background-color: #42FED0;
+  width: .7rem;
+  height: .7rem;
 }
 
 .itemMenu:hover h2 {
@@ -23,13 +25,13 @@
   transition: padding .1s linear;
 }
 
-.a {
+.marker {
   width: 0.5rem;
   height: 0.5rem;
   background-color: white;
   transform: rotate(45deg);
   margin: 0.25rem;
-  transition: transform .1s linear;
+  transition: all .1s linear;
 }
 
 .highlight {
