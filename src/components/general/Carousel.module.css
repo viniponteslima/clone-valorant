@@ -22,27 +22,27 @@
 
 .carouselDots {
   position: absolute;
-  bottom: 10px;
+  bottom: 1.25vh;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 6px;
+  gap: .6vh;
 }
 
 .carouselDotWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 8px;
-  height: 8px;
+  width: 1vh;
+  height: 1vh;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: .1vh solid transparent;
   cursor: pointer;
 }
 
 .carouselDot {
-  width: 4px;
-  height: 4px;
+  width: .5vh;
+  height: .5vh;
   background-color: #ccc;
   border-radius: 50%;
 }
