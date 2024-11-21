@@ -1,5 +1,5 @@
-export default function Agents(endpoint) {
-  return fetch(`https://valorant-api.com/v1/${endpoint}?language=pt-BR`, {
+export default function Valorant(endpoint) {
+  return fetch(`/api/valorant/${endpoint}`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
@@ -7,7 +7,7 @@ export default function Agents(endpoint) {
   })
     .then(resp => resp.json())
     .then(data => {
-      return data.data;
+      return data;
     })
     .catch(err => {
       console.log(err);
