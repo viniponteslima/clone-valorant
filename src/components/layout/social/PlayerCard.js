@@ -24,8 +24,7 @@ export default function PlayerCard({ state='Ausente', name, image, bgColor='#888
 
   return (
     <div className={styles.playerCard}>
-      <div className={styles.image} style={{backgroundColor: bgColor}}>
-        <img src={image} alt='' />
+      <div className={styles.image} style={{background: `${bgColor} url(${image}) no-repeat`, backgroundSize: 'cover'}}>
         <span style={{backgroundColor:cor}}></span>
       </div>
       <div className={styles.playerInfo}>
