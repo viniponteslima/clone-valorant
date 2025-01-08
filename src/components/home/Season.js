@@ -11,8 +11,8 @@ export default function Season({season, act}) {
         </div>
         {(season && act) && (
           <div className={styles.seasonName}>
-            <h3>{season ? season.title : 'Season'}</h3>
-            <h4>{act ? act.title : 'Act'}</h4>
+            <h3>{season ? (season.title || season.displayName) : 'Season'}</h3>
+            <h4>{act ? (act.title || act.displayName) : 'Act'}</h4>
           </div>
       )}
 
