@@ -28,8 +28,8 @@ export default function Home() {
         const endTime = new Date(season.endTime);
         return currentDate < endTime;
       });
-      setAct(currentAct || seasonData[seasonData.length - 1]); // Caso não encontre, pega a última
-      setSeason(currentSeason || seasonData[seasonData.length - 1]); // Caso não encontre, pega a última
+      setAct(currentAct || seasonData[seasonData.length - 1]);
+      setSeason(currentSeason || seasonData[seasonData.length - 1]);
     }
   
     fetchSeason();
