@@ -4,7 +4,8 @@ export async function GET(request, { params }) {
   return fetch(`https://valorant-api.com/v1/${endpoint}?language=pt-BR`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
+      'Cache-Control': 'public, max-age=3600'
     },
   })
     .then(resp => {
@@ -27,6 +28,7 @@ export async function GET(request, { params }) {
         JSON.stringify({ error: `Erro ao conectar à API externa: ${err}` }),
         { status: 500, headers: { 'Content-Type': 'application/json' } }
       );
+
     });
 
 }
