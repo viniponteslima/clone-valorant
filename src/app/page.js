@@ -16,7 +16,7 @@ export default function Home() {
     async function fetchSeason() {
       const seasonData = await Valorant('seasons');
       const acts = seasonData.filter((act) => act.type === "EAresSeasonType::Act")
-      const seasons = seasonData.filter((act) => act.type !== "EAresSeasonType::Act")
+      const seasons = seasonData.filter((season) => season.type !== "EAresSeasonType::Act")
 
       const currentAct = acts.find(act => {
         const currentDate = new Date();
