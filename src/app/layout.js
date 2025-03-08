@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         <TurnHorizontal />
         
         <Page>
-          <BackgroundVideo src={'/videos/10_02_Homescreen.mp4'} />
+          <BackgroundVideo src={'/videos/10_04_Homescreen.mp4'} />
           {children}
         </Page>
 
