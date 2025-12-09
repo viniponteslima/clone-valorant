@@ -22,13 +22,14 @@ export default function Carousel({ children, dots = false }) {
 
 			{dots && (
 				<div className={styles.carouselDots}>
-					{React.Children.map(children, (child, index) => (
-						<div
+					{React.Children.map(children, (_, index) => (
+						<button
+						type="button"
 							className={`${styles.carouselDotWrapper} ${index === currentIndex ? styles.active : ""}`}
 							onClick={() => goToSlide(index)}
 						>
 							<div className={styles.carouselDot}></div>
-						</div>
+						</button>
 					))}
 				</div>
 			)}
