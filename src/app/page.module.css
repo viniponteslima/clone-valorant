@@ -1,12 +1,12 @@
 .home {
-  color: white;
-  display: grid;
-  grid-template-rows: min-content auto ;
+	color: white;
+	display: grid;
+	grid-template-rows: min-content auto;
 }
 
 .homeScreen {
-  display: grid;
-  grid-template-columns: auto min-content;
-  align-items: center;
-  margin: 0 3.45rem 4.25vh 0;
+	display: grid;
+	grid-template-columns: auto min-content;
+	align-items: center;
+	margin: 0 3.45rem 4.25vh 0;
 }

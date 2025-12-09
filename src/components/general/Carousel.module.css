@@ -1,56 +1,56 @@
 .carousel {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  margin: 0 auto;
-  height: 100%;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	height: 100%;
 }
 
 .carouselContainer {
-  display: flex;
-  transition: transform .3s linear;
-  min-height: 100%;
+	display: flex;
+	transition: transform 0.3s linear;
+	min-height: 100%;
 }
 
 .carouselSlide {
-  min-width: 100%;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  color: #fff;
+	min-width: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
 }
 
 .carouselDots {
-  position: absolute;
-  bottom: 1.25vh;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: .6vh;
+	position: absolute;
+	bottom: 1.25vh;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 0.6vh;
 }
 
 .carouselDotWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 1vh;
-  height: 1vh;
-  border-radius: 50%;
-  border: .1vh solid transparent;
-  cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1vh;
+	height: 1vh;
+	border-radius: 50%;
+	border: 0.1vh solid transparent;
+	cursor: pointer;
 }
 
 .carouselDot {
-  width: .5vh;
-  height: .5vh;
-  background-color: #ccc;
-  border-radius: 50%;
+	width: 0.5vh;
+	height: 0.5vh;
+	background-color: #ccc;
+	border-radius: 50%;
 }
 
 .active {
-  border-color: #84CBBF;
+	border-color: #84cbbf;
 }
 
 .active .carouselDot {
-  background-color: #84CBBF;
+	background-color: #84cbbf;
 }

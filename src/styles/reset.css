@@ -2,10 +2,10 @@
 /* v1.0 | 20080212 */
 
 * {
-  box-sizing: border-box;
-  user-select: none;
-  text-decoration: none;
-  color: unset;
+	box-sizing: border-box;
+	user-select: none;
+	text-decoration: none;
+	color: unset;
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -17,15 +17,19 @@
 body {
 	line-height: 1;
 }
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
 	content: none;
 }
 

@@ -1,40 +1,40 @@
 .itemMenu {
-  font-size: 6vh;
-  display: flex;
-  align-items: center;
-  gap: 0.875rem;
-  width: max-content;
-  text-transform: uppercase;
-  font-weight: bold;
+	font-size: 6vh;
+	display: flex;
+	align-items: center;
+	gap: 0.875rem;
+	width: max-content;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
-.itemMenu:hover, .itemMenu:hover .highlight {
-  color: #42FED0 !important;
-
+.itemMenu:hover,
+.itemMenu:hover .highlight {
+	color: #42fed0 !important;
 }
 
 .itemMenu:hover .marker {
-  transform: rotate(135deg);
-  background-color: #42FED0;
-  width: .7rem;
-  height: .7rem;
+	transform: rotate(135deg);
+	background-color: #42fed0;
+	width: 0.7rem;
+	height: 0.7rem;
 }
 
 .itemMenu:hover h2 {
-  padding-left: 0.75rem;
-  transition: padding .1s linear;
+	padding-left: 0.75rem;
+	transition: padding 0.1s linear;
 }
 
 .marker {
-  width: 0.5rem;
-  height: 0.5rem;
-  background-color: white;
-  transform: rotate(45deg);
-  margin: 0.25rem;
-  transition: all .1s linear;
+	width: 0.5rem;
+	height: 0.5rem;
+	background-color: white;
+	transform: rotate(45deg);
+	margin: 0.25rem;
+	transition: all 0.1s linear;
 }
 
 .highlight {
-  font-size: 12vh;
-  color: #FE4554;
+	font-size: 12vh;
+	color: #fe4554;
 }

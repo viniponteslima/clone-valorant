@@ -1,15 +1,15 @@
 // app/not-found.js
 "use client";
 
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function NotFound() {
-  const router = useRouter();
+	const router = useRouter();
 
-  useEffect(() => {
-    router.replace('/');
-  }, [router]);
+	useEffect(() => {
+		router.replace("/");
+	}, [router]);
 
-  return null;
+	return null;
 }
