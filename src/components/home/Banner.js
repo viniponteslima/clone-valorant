@@ -12,7 +12,7 @@ export default function Banner() {
 			href: "https://github.com/viniponteslima/",
 			image: {
 				icon: mdiGithub,
-				bgColor: "#000000",
+				bgColor: "#000000bf",
 			},
 		},
 		{
@@ -20,7 +20,7 @@ export default function Banner() {
 			href: "https://www.linkedin.com/in/viniciusponteslima/",
 			image: {
 				icon: mdiLinkedin,
-				bgColor: "#0A66C2",
+				bgColor: "#0A66C2bf",
 			},
 		},
 		{
@@ -29,7 +29,7 @@ export default function Banner() {
 			image: {
 				icon: mdiInstagram,
 				bgColor:
-					"radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)",
+					"radial-gradient(circle at 30% 107%, #fdf497BF 0%, #fdf497BF 5%, #fd5949BF 45%,#d6249fBF 60%,#285AEBBF 90%)",
 			},
 		},
 	];

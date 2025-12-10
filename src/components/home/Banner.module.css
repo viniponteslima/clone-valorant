@@ -9,7 +9,7 @@
 .thisProject,
 .social {
 	width: 30vh;
-	background-color: #00000080;
+	background: #000000bf;
 	border: 0.2vh solid #828285;
 }
 
@@ -24,27 +24,23 @@
 }
 
 .thisProject::before {
+	--color: 0, 255, 179;
 	position: absolute;
 	content: "";
 	inset: 0;
 	z-index: 1;
-	transition: opacity 0.1s linear;
+	border: 0.2vh solid rgb(var(--color)); 
 	background: linear-gradient(
 		0deg,
-		rgba(0, 255, 179, 0.25) 0%,
-		rgba(0, 0, 0, 0) 25%,
-		rgba(0, 0, 0, 0) 100%
+		rgba(var(--color), 0.5) 0%,
+		transparent 30%
 	);
 	opacity: 0;
-	transition: all 0.1s linear;
+	transition: all .2s linear;
 }
 
 .thisProject:hover::before {
 	opacity: 1;
-}
-
-.thisProject:hover {
-	border-color: #90ffe2;
 }
 
 .thisProject h3 {
