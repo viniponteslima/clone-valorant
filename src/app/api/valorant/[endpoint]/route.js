@@ -1,5 +1,5 @@
-export async function GET(request, { params }) {
-	const { endpoint } = params;
+export async function GET(_, { params }) {
+	const { endpoint } = await params;
 
 	return fetch(`https://valorant-api.com/v1/${endpoint}?language=pt-BR`, {
 		method: "GET",
