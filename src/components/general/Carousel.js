@@ -16,7 +16,7 @@ export default function Carousel({ children, dots = false }) {
 			setCurrentIndex(prev =>
 				prev === totalSlides - 1 ? 0 : prev + 1
 			);
-		}, 3000);
+		}, 5000);
 	}, [totalSlides]);
 
 	const goToSlide = (index) => {
