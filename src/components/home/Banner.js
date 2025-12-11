@@ -47,13 +47,13 @@ export default function Banner() {
 			<div className={styles.social}>
 				<Carousel dots={true}>
 					{carousel?.map((item) => (
-							<ItemCarousel
-								key={item.href}
-								href={item.href}
-								caption={item.text}
-								image={item.image}
-							/>
-						))}
+						<ItemCarousel
+							key={item.href}
+							href={item.href}
+							caption={item.text}
+							image={item.image}
+						/>
+					))}
 				</Carousel>
 			</div>
 		</aside>

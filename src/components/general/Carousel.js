@@ -13,9 +13,7 @@ export default function Carousel({ children, dots = false }) {
 		}
 
 		intervalRef.current = setInterval(() => {
-			setCurrentIndex(prev =>
-				prev === totalSlides - 1 ? 0 : prev + 1
-			);
+			setCurrentIndex((prev) => (prev === totalSlides - 1 ? 0 : prev + 1));
 		}, 5000);
 	}, [totalSlides]);
 
@@ -29,7 +27,6 @@ export default function Carousel({ children, dots = false }) {
 
 		return () => clearInterval(intervalRef.current);
 	}, [startAutoPlay]);
-
 
 	return (
 		<div className={styles.carousel}>
@@ -48,10 +45,9 @@ export default function Carousel({ children, dots = false }) {
 						<button
 							type="button"
 							aria-label={`Ir para o slide ${index + 1}`}
-							className={`${styles.carouselDot } ${index === currentIndex ? styles.active : ""}`}
+							className={`${styles.carouselDot} ${index === currentIndex ? styles.active : ""}`}
 							onClick={() => goToSlide(index)}
-						>
-						</button>
+						></button>
 					))}
 				</div>
 			)}

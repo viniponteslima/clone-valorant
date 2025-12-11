@@ -22,19 +22,19 @@
 
 .carouselDots {
 	position: absolute;
-	bottom: .5vh;
+	bottom: 0.5vh;
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
 	gap: 0.3vh;
-	padding: .25vh;
+	padding: 0.25vh;
 }
 
 .carouselDot {
-	--colorDot: #CCC;
+	--colorDot: #ccc;
 	--colorRing: transparent;
 	position: relative;
-	margin: .25vh;
+	margin: 0.25vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -44,9 +44,10 @@
 	cursor: pointer;
 }
 
-.carouselDot::after, .carouselDot::before {
+.carouselDot::after,
+.carouselDot::before {
 	position: absolute;
-	aspect-ratio: 1/1;
+	aspect-ratio: 1 / 1;
 	content: "";
 }
 
@@ -60,7 +61,7 @@
 .carouselDot::before {
 	height: 100%;
 	border-radius: 50%;
-	border: .18vh solid var(--colorRing);
+	border: 0.18vh solid var(--colorRing);
 }
 
 .active {

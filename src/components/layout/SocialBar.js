@@ -12,7 +12,9 @@ export default function SocialBar() {
 	useEffect(() => {
 		async function fetchAgents() {
 			const agentsData = await Valorant("agents");
-			const playableAgents = agentsData.filter((agent) => agent.isPlayableCharacter);
+			const playableAgents = agentsData.filter(
+				(agent) => agent.isPlayableCharacter,
+			);
 			setAgents(playableAgents || []);
 			setQuantityAgents(playableAgents ? playableAgents.length : 0);
 		}
@@ -30,17 +32,16 @@ export default function SocialBar() {
 
 			<QuantityCard len={agents ? agents.length : 0} title={"Conectado(a)"} />
 
-			{quantityAgents>0 && agents.map(
-				(agent) =>
+			{quantityAgents > 0 &&
+				agents.map((agent) => (
 					<PlayerCard
 						state="EmJogo"
 						key={agent.uuid}
 						name={agent.displayName}
 						image={agent.displayIcon}
-					bgColor={`#${agent.backgroundGradientColors[3]}`}
-						/>
-					)
-				}
+						bgColor={`#${agent.backgroundGradientColors[3]}`}
+					/>
+				))}
 		</div>
 	);
 }

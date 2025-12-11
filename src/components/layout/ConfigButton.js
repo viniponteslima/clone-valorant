@@ -3,7 +3,7 @@ import styles from "./ConfigButton.module.css";
 export default function ConfigButton() {
 	return (
 		<div className={styles.configButton}>
-			<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 400 400">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
 				<title>Configurações</title>
 				<path d="M308 200C308 259.647 259.647 308 200 308C140.353 308 92 259.647 92 200C92 140.353 140.353 92 200 92C259.647 92 308 140.353 308 200ZM116.912 200C116.912 245.888 154.112 283.088 200 283.088C245.888 283.088 283.088 245.888 283.088 200C283.088 154.112 245.888 116.912 200 116.912C154.112 116.912 116.912 154.112 116.912 200Z" />
 				<rect

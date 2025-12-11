@@ -15,7 +15,7 @@ export async function GET(_, { params }) {
 	if (!allowedEndpoints.has(endpoint)) {
 		return Response.json(
 			{ error: "Endpoint inválido ou não permitido." },
-			{ status: 400 }
+			{ status: 400 },
 		);
 	}
 
@@ -29,9 +29,6 @@ export async function GET(_, { params }) {
 			},
 		});
 	} catch (err) {
-		return Response.json(
-			{ error: err.message },
-			{ status: 500 }
-		);
+		return Response.json({ error: err.message }, { status: 500 });
 	}
 }
