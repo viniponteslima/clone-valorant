@@ -1,43 +1,56 @@
-"use client"
-import React, { useState } from 'react';
-import styles from './Carousel.module.css';
+"use client";
+import React, { useCallback, useEffect, useState } from "react";
+import styles from "./Carousel.module.css";
 
-export default function Carousel({ children, dots=false }) {
+export default function Carousel({ children, dots = false }) {
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const totalSlides = React.Children.count(children);
+	const intervalRef = React.useRef(null);
 
-  const [currentIndex, setCurrentIndex] = useState(0)
+	const startAutoPlay = useCallback(() => {
+		if (intervalRef.current) {
+			clearInterval(intervalRef.current);
+		}
 
-  const goToSlide = (index) => {
-    setCurrentIndex(index);
-  };
+		intervalRef.current = setInterval(() => {
+			setCurrentIndex((prev) => (prev === totalSlides - 1 ? 0 : prev + 1));
+		}, 5000);
+	}, [totalSlides]);
 
-  return (
-    <div className={styles.carousel}>
-      <div className={styles.carouselContainer} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-        {
-          React.Children.map(children, (child) => (
-            <div className={styles.carouselSlide}>
-              {child}
-            </div>
-          ))
-        }
-      </div>
+	const goToSlide = (index) => {
+		setCurrentIndex(index);
+		startAutoPlay();
+	};
 
-      {
-        dots && (
-          <div className={styles.carouselDots}>
-          {
-            React.Children.map(children, (child, index) => (
-              <div 
-                className={`${styles.carouselDotWrapper} ${index === currentIndex ? styles.active : ''}`} 
-                onClick={() => goToSlide(index)}
-              >
-                <div className={styles.carouselDot}></div>
-              </div>
-            ))
-          }
-        </div>
-        )
-      }      
-    </div>
-  );
+	useEffect(() => {
+		startAutoPlay();
+
+		return () => clearInterval(intervalRef.current);
+	}, [startAutoPlay]);
+
+	return (
+		<div className={styles.carousel}>
+			<div
+				className={styles.carouselContainer}
+				style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+			>
+				{React.Children.map(children, (child) => (
+					<div className={styles.carouselSlide}>{child}</div>
+				))}
+			</div>
+
+			{dots && (
+				<div className={styles.carouselDots}>
+					{React.Children.map(children, (_, index) => (
+						<button
+							type="button"
+							aria-label={`Ir para o slide ${index + 1}`}
+							className={`${styles.carouselDot} ${index === currentIndex ? styles.active : ""}`}
+							onClick={() => goToSlide(index)}
+						></button>
+					))}
+				</div>
+			)}
+		</div>
+	);
 }

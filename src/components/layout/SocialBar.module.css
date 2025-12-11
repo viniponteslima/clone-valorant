@@ -1,36 +1,36 @@
 .socialBar {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  top: 3.1875rem;
-  bottom: 0rem;
-  right: calc(3.4375rem - 16.0625rem);
-  background-color: #171E24;
-  border-top: 0.0625rem solid #A5A1AD;
-  width: 16.0625rem;
-  transition: right .1s linear;
-  z-index: 99;
-  cursor: pointer;
-  overflow-y: scroll ;
-  overflow-x: hidden;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	top: 3.1875rem;
+	bottom: 0rem;
+	right: calc(3.4375rem - 16.0625rem);
+	background-color: #171e24;
+	border-top: 0.0625rem solid #a5a1ad;
+	width: 16.0625rem;
+	transition: right 0.1s linear;
+	z-index: 99;
+	cursor: pointer;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .socialBar::-webkit-scrollbar {
-  width: 0.25rem;
+	width: 0.25rem;
 }
 
 .socialBar::-webkit-scrollbar-track {
-  background: transparent;
+	background: transparent;
 }
 
 .socialBar::-webkit-scrollbar-thumb {
-  background-color: #888888;
-  border-radius: -0.0625rem;
-  border: 0.1875rem none #ff0000;
+	background-color: #888888;
+	border-radius: -0.0625rem;
+	border: 0.1875rem none #ff0000;
 }
 
 .socialBar:hover {
-  background-color: rgba(23, 30, 36, .7);
-  right: 0;
-  /* filter: brightness(1.3); */
+	background-color: rgba(23, 30, 36, 0.7);
+	right: 0;
+	/* filter: brightness(1.3); */
 }
