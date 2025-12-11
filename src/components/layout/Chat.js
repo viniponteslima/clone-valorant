@@ -6,7 +6,9 @@ export default function Chat() {
 			<label htmlFor="chat">
 				<span>Grupo:</span> <input type="text" id="chat" autoComplete="off" />
 			</label>
-			<label htmlFor="fixChat"></label>
+			<label htmlFor="anchorChat">
+				<input type="text" id="anchorChat" autoComplete="off" />
+			</label>
 		</div>
 	);
 }

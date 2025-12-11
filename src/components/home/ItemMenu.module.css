@@ -8,23 +8,6 @@
 	font-weight: bold;
 }
 
-.itemMenu:hover,
-.itemMenu:hover .highlight {
-	color: #42fed0 !important;
-}
-
-.itemMenu:hover .marker {
-	transform: rotate(135deg);
-	background-color: #42fed0;
-	width: 0.7rem;
-	height: 0.7rem;
-}
-
-.itemMenu:hover h2 {
-	padding-left: 0.75rem;
-	transition: padding 0.1s linear;
-}
-
 .marker {
 	width: 0.5rem;
 	height: 0.5rem;
@@ -37,4 +20,21 @@
 .highlight {
 	font-size: 12vh;
 	color: #fe4554;
+}
+
+.itemMenu:hover,
+.itemMenu:hover .highlight {
+	color: #42fed0;
+}
+
+.itemMenu:hover .marker {
+	transform: rotate(135deg);
+	background-color: #42fed0;
+	width: 0.7rem;
+	height: 0.7rem;
+}
+
+.itemMenu:hover h2 {
+	padding-left: 0.75rem;
+	transition: padding 0.1s linear;
 }

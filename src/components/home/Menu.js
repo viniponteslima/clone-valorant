@@ -40,9 +40,9 @@ export default function Menu() {
 
 	return (
 		<div className={styles.menu}>
-			{itensMenu.map((item, index) => (
+			{itensMenu.map((item) => (
 				<ItemMenu
-					key={index}
+					key={item.title}
 					text={item.title}
 					path={item.path}
 					highlight={item.highlight ? item.highlight : ""}

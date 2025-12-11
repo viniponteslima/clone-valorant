@@ -10,6 +10,7 @@ export default function Economy() {
 			<div className={styles.missions}>
 				<div className="dailyMission">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+						<title>Missão Diária</title>
 						<path d="M217.36 53L345.768 181.407L304.847 181.407L217.36 93.9203L217.36 53Z" />
 						<path d="M217.36 346.967L345.768 218.56L304.847 218.56L217.36 306.047L217.36 346.967Z" />
 						<path d="M182.407 53.0999L53.9999 181.507L94.9203 181.507L182.407 94.0201L182.407 53.0999Z" />
@@ -26,11 +27,8 @@ export default function Economy() {
 					<span>{coinsFormat(5)}/4</span>
 				</div>
 				<div className="weekMission">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 400 400"
-						fill="none"
-					>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+						<title>Missão Semanal</title>
 						<circle
 							cx="200"
 							cy="200"
@@ -49,11 +47,8 @@ export default function Economy() {
 			</div>
 
 			<div className={styles.nightMarket}>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 400 400"
-					fill="none"
-				>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+					<title>Mercado Noturno</title>
 					<path
 						xmlns="http://www.w3.org/2000/svg"
 						fillRule="evenodd"
@@ -65,12 +60,9 @@ export default function Economy() {
 			</div>
 
 			<div className={styles.coins}>
-				<div className={styles.valorantPoints}>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 400 400"
-						fill="none"
-					>
+				<div className={styles.points}>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+						<title>Valorant Points</title>
 						<circle
 							cx="200"
 							cy="200"
@@ -92,12 +84,9 @@ export default function Economy() {
 					<span>{coinsFormat(5000)}</span>
 				</div>
 
-				<div className={styles.valorantPoints}>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 400 400"
-						fill="none"
-					>
+				<div className={styles.points}>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+						<title> Radiant Points</title>
 						<circle
 							cx="200"
 							cy="200"
@@ -119,12 +108,9 @@ export default function Economy() {
 					<span>{coinsFormat(5000)}</span>
 				</div>
 
-				<div className={styles.valorantPoints}>
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 400 400"
-						fill="none"
-					>
+				<div className={styles.points}>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+						<title>Coins</title>
 						<rect
 							x="72.1421"
 							y="222.664"
