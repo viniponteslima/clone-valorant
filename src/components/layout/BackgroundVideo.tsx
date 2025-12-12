@@ -13,6 +13,7 @@ export default function BackgroundVideo({ src }: BackgroundVideoProps) {
 			loop
 			id="backgroundVideo"
 			src={src}
+			preload="auto"
 		/>
 	);
 }

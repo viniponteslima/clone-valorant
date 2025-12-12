@@ -8,6 +8,7 @@ import Economy from "@/components/layout/Economy";
 import Page from "@/components/layout/Page";
 import SocialBar from "@/components/layout/SocialBar";
 import TurnHorizontal from "@/components/layout/TurnHorizontal";
+import { bgVideo } from "@/data/bgVideo";
 
 export const metadata = {
 	title: "Valorant",
@@ -32,7 +33,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
 				<TurnHorizontal />
 
 				<Page>
-					<BackgroundVideo src={"/videos/bgVideo.mp4"} />
+					<BackgroundVideo src={bgVideo} />
 					{children}
 				</Page>
 			</body>
