@@ -1,6 +1,7 @@
+import type { SeasonProps } from "@/types/Season";
 import styles from "./Season.module.css";
 
-export default function Season({ season, act }) {
+export default function Season({ season, act }: SeasonProps) {
 	return (
 		<div className={styles.season}>
 			<div className={styles.logoContainer}>

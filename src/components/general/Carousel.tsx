@@ -2,14 +2,22 @@
 import React, { useCallback, useEffect, useState } from "react";
 import styles from "./Carousel.module.css";
 
-export default function Carousel({ children, dots = false }) {
-	const [currentIndex, setCurrentIndex] = useState(0);
-	const totalSlides = React.Children.count(children);
-	const intervalRef = React.useRef(null);
+interface CarouselProps {
+	children: React.ReactNode;
+	dots?: boolean;
+	current?: number;
+}
+
+export default function Carousel({ children, dots = false }: CarouselProps) {
+	const [currentIndex, setCurrentIndex] = useState<number>(0);
+	const totalSlides: number = React.Children.count(children);
+	const intervalRef = React.useRef<NodeJS.Timeout | null>(null);
 
 	const startAutoPlay = useCallback(() => {
 		if (intervalRef.current) {
-			clearInterval(intervalRef.current);
+			if (intervalRef.current !== null) {
+				clearInterval(intervalRef.current);
+			}
 		}
 
 		intervalRef.current = setInterval(() => {
@@ -17,7 +25,7 @@ export default function Carousel({ children, dots = false }) {
 		}, 5000);
 	}, [totalSlides]);
 
-	const goToSlide = (index) => {
+	const goToSlide = (index: number) => {
 		setCurrentIndex(index);
 		startAutoPlay();
 	};
@@ -25,7 +33,11 @@ export default function Carousel({ children, dots = false }) {
 	useEffect(() => {
 		startAutoPlay();
 
-		return () => clearInterval(intervalRef.current);
+		return () => {
+			if (intervalRef.current !== null) {
+				clearInterval(intervalRef.current);
+			}
+		};
 	}, [startAutoPlay]);
 
 	return (

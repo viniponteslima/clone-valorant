@@ -1,6 +1,11 @@
 import styles from "./QuantityCard.module.css";
 
-export default function QuantityCard({ len, title }) {
+interface QuantityCardProps {
+	len: number;
+	title: string;
+}
+
+export default function QuantityCard({ len, title }: QuantityCardProps) {
 	return (
 		<div className={styles.quantityCard}>
 			<small className="qnt">{len}</small>

@@ -1,3 +1,5 @@
+import type { NextRequest } from "next/server";
+import { getErrorMessage } from "@/utils/Errors";
 import { valorantFetch } from "@/utils/valorantService";
 
 const allowedEndpoints = new Set([
@@ -9,7 +11,14 @@ const allowedEndpoints = new Set([
 	"competitivetiers",
 ]);
 
-export async function GET(_, { params }) {
+interface RouteParams {
+	params: Promise<{ endpoint: string }>;
+}
+
+export async function GET(
+	_req: NextRequest,
+	{ params }: RouteParams,
+): Promise<Response> {
 	const { endpoint } = await params;
 
 	if (!allowedEndpoints.has(endpoint)) {
@@ -29,6 +38,6 @@ export async function GET(_, { params }) {
 			},
 		});
 	} catch (err) {
-		return Response.json({ error: err.message }, { status: 500 });
+		return Response.json({ error: getErrorMessage(err) }, { status: 500 });
 	}
 }

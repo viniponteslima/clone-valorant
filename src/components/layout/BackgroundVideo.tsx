@@ -1,6 +1,10 @@
 import styles from "./BackgroundVideo.module.css";
 
-export default function BackgroundVideo({ src }) {
+interface BackgroundVideoProps {
+	src: string;
+}
+
+export default function BackgroundVideo({ src }: BackgroundVideoProps) {
 	return (
 		<video
 			className={styles.video}
