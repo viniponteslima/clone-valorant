@@ -1,7 +1,7 @@
 import styles from "./Economy.module.css";
 
 export default function Economy() {
-	function coinsFormat(value) {
+	function coinsFormat(value: number) {
 		return Math.floor(Math.random() * value).toLocaleString("pt-BR");
 	}
 

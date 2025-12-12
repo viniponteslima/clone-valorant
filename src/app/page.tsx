@@ -47,11 +47,10 @@ export default function Home() {
 
 	return (
 		<div className={styles.home}>
-			<Season season={season} act={act} />
+			{season && act && <Season season={season} act={act} />}
 
 			<div className={styles.homeScreen}>
 				<Menu />
-
 				<Banner />
 			</div>
 		</div>
