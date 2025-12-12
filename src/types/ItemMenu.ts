@@ -1,5 +1,5 @@
 export interface ItemMenuProps {
-  text: string;
-  path: string;
-  highlight?: boolean;
+	text: string;
+	path: string;
+	highlight?: boolean;
 }
