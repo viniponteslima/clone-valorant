@@ -6,26 +6,34 @@ import Season from "@/components/home/Season";
 import Valorant from "@/utils/Valorant";
 import styles from "./page.module.css";
 
-export default function Home() {
-	const [season, setSeason] = useState();
-	const [act, setAct] = useState();
+interface SeasonType {
+	id: string;
+	type: string;
+	startTime: string;
+	endTime: string;
+	displayName: string;
+	assetPath: string;
+}
 
+export default function Home() {
+	const [season, setSeason] = useState<SeasonType | undefined>();
+	const [act, setAct] = useState<SeasonType | undefined>();
 	useEffect(() => {
 		async function fetchSeason() {
 			const seasonData = await Valorant("seasons");
 			const acts = seasonData.filter(
-				(act) => act.type === "EAresSeasonType::Act",
+				(act: SeasonType) => act.type === "EAresSeasonType::Act",
 			);
 			const seasons = seasonData.filter(
-				(season) => season.type !== "EAresSeasonType::Act",
+				(season: SeasonType) => season.type !== "EAresSeasonType::Act",
 			);
 
-			const currentAct = acts.find((act) => {
+			const currentAct = acts.find((act: SeasonType) => {
 				const currentDate = new Date();
 				const endTime = new Date(act.endTime);
 				return currentDate < endTime;
 			});
-			const currentSeason = seasons.find((season) => {
+			const currentSeason = seasons.find((season: SeasonType) => {
 				const currentDate = new Date();
 				const endTime = new Date(season.endTime);
 				return currentDate < endTime;

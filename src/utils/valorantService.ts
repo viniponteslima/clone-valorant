@@ -1,4 +1,4 @@
-export async function valorantFetch(endpoint, revalidate = 3600) {
+export async function valorantFetch(endpoint: string, revalidate: number = 3600) {
 	const url = `https://valorant-api.com/v1/${endpoint}?language=pt-BR`;
 
 	const resp = await fetch(url, { next: { revalidate } });
