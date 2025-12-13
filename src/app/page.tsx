@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
-import Banner from "@/components/home/Banner";
-import Menu from "@/components/home/Menu";
-import Season from "@/components/home/Season";
 import Valorant from "@/utils/Valorant";
+import Banner from "$/home/Banner";
+import Menu from "$/home/Menu";
+import Season from "$/home/Season";
 import styles from "./page.module.css";
 
 interface SeasonType {
