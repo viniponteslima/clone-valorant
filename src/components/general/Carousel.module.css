@@ -22,24 +22,24 @@
 
 .carouselDots {
 	position: absolute;
-	bottom: 0.5vh;
+	bottom: 0.25rem;
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
-	gap: 0.3vh;
-	padding: 0.25vh;
+	gap: 0.15rem;
+	padding: 0.125rem;
 }
 
 .carouselDot {
 	--colorDot: #ccc;
 	--colorRing: transparent;
 	position: relative;
-	margin: 0.25vh;
+	margin: 0.125rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 1vh;
-	height: 1vh;
+	width: 0.5rem;
+	height: 0.5rem;
 	border-radius: 50%;
 	cursor: pointer;
 }
@@ -61,7 +61,7 @@
 .carouselDot::before {
 	height: 100%;
 	border-radius: 50%;
-	border: 0.18vh solid var(--colorRing);
+	border: 0.09rem solid var(--colorRing);
 }
 
 .active {

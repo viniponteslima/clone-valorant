@@ -8,5 +8,11 @@
 	display: grid;
 	grid-template-columns: auto min-content;
 	align-items: center;
-	margin: 0 3.45rem 4.25vh 0;
+	margin: 0 3.45rem 2.125rem 0;
+}
+
+@media (orientation: portrait) {
+	.homeScreen {
+		align-items: start;
+	}
 }

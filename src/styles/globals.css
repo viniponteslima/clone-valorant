@@ -5,7 +5,13 @@
 
 :root {
 	font-family: "Roboto", sans-serif;
-	font-size: 32px;
+	font-size: 2vh;
+}
+
+@media (orientation: portrait) {
+	:root {
+		font-size: 3vw;
+	}
 }
 
 * {
@@ -26,36 +32,4 @@ body {
 code {
 	font-family:
 		source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-@media (height < 1560px) {
-	:root {
-		font-size: 20px;
-	}
-}
-@media (height < 1100px) {
-	:root {
-		font-size: 16px;
-	}
-}
-@media (height < 780px) {
-	:root {
-		font-size: 12px;
-	}
-}
-@media (height < 600px) {
-	:root {
-		font-size: 10px;
-	}
-}
-
-@media (height < 480px) {
-	:root {
-		font-size: 8px;
-	}
-}
-@media (height < 400px) {
-	:root {
-		font-size: 6px;
-	}
 }

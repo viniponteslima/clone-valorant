@@ -32,5 +32,4 @@
 .socialBar:hover {
 	background-color: rgba(23, 30, 36, 0.7);
 	right: 0;
-	/* filter: brightness(1.3); */
 }
