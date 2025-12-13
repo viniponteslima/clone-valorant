@@ -46,3 +46,9 @@
 .thisProject h3 {
 	text-align: center;
 }
+
+@media (orientation: portrait) {
+	.bannersContainer {
+		display: none;
+	}
+}
