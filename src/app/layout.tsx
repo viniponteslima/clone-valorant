@@ -7,7 +7,6 @@ import ConfigButton from "@/components/layout/ConfigButton";
 import Economy from "@/components/layout/Economy";
 import Page from "@/components/layout/Page";
 import SocialBar from "@/components/layout/SocialBar";
-import TurnHorizontal from "@/components/layout/TurnHorizontal";
 import { bgVideo } from "@/data/bgVideo";
 
 export const metadata = {
@@ -30,7 +29,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
 				<ConfigButton />
 				<SocialBar />
 				<Chat />
-				<TurnHorizontal />
 
 				<Page>
 					<BackgroundVideo src={bgVideo} />
