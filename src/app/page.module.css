@@ -7,12 +7,6 @@
 .homeScreen {
 	display: grid;
 	grid-template-columns: auto min-content;
-	align-items: center;
+	align-items: start;
 	margin: 0 3.45rem 2.125rem 0;
-}
-
-@media (orientation: portrait) {
-	.homeScreen {
-		align-items: start;
-	}
 }
