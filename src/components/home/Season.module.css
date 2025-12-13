@@ -34,7 +34,7 @@
 .logoContainer {
 	width: 4rem;
 	height: 4rem;
-	aspect-ratio: 1/1;
+	aspect-ratio: 1 / 1;
 	border: 0.2rem solid white;
 	display: flex;
 	justify-content: center;

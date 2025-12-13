@@ -15,10 +15,10 @@ export default function Season({ season, act }: SeasonProps) {
 					<path d="M286.711 0.131757C287.972 -0.344572 289.362 0.821032 289.177 2.14354C289.222 39.1347 289.171 76.1258 289.199 113.117C289.283 115.213 288.824 117.381 287.462 119.029C278.154 130.674 268.835 142.313 259.527 153.952C257.974 155.97 255.436 157.085 252.897 156.956C223.572 156.928 194.242 156.973 164.917 156.934C163.185 157.202 162.199 154.866 163.476 153.739C204.144 102.862 244.845 52.0011 285.534 1.13485C285.842 0.697747 286.235 0.361515 286.711 0.131757Z" />
 				</svg>
 			</div>
-				<div className={styles.seasonName}>
-					<h3>{season ? season.title || season.displayName : "Season"}</h3>
-					<h4>{act ? act.title || act.displayName : "Act"}</h4>
-				</div>
+			<div className={styles.seasonName}>
+				<h3>{season ? season.title || season.displayName : "Season"}</h3>
+				<h4>{act ? act.title || act.displayName : "Act"}</h4>
+			</div>
 		</div>
 	);
 }
